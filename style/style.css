@@ -1,0 +1,71 @@
+/*Typographie*/
+html {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+hr {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+button {
+    font-family: 'Rajdhani', sans-serif;   
+}
+
+/*background*/
+html {
+    background-image: url(../assets/illustrations/Bathome1.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+/*border*/
+body {
+    width: 85%;
+    margin: 0 auto;
+    border-left: solid 2px #c4c4c450;
+    border-right: solid 2px #c4c4c450;
+}
+
+header {
+    border-bottom: solid 2px #c4c4c450;
+}
+
+main, header {
+    padding: 50px 10%;
+    margin:auto;
+}
+
+/*header*/
+header {
+    height: 100px;
+    justify-content: space-between;
+    display:flex;
+    
+}
+
+/* juste pour voir*/
+.tete {
+    border: solid 1px black;
+}
+
+header ul {
+    display:flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li a {
+    color: white;
+}
+
+header ul li {
+    padding: 5px;
+}
+
+
+

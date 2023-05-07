@@ -5,18 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
     <title>Batman | Home</title>
 </head>
 <body>
     <header>
-        <img src="assets/logo/logohome.png" alt="Logo Batman" class="yellow">
-        <nav>
+        <div class="tete">
+            <img src="assets/logo/logohome.png" alt="Logo Batman" class="yellow logoFirst">
+        </div>
+        
+        <nav class="tete">
             <ul>
-                <li>HOME</li>
-                <li>GAME</li>
-                <li>E-SHOP</li>
-                <li>MO COMPTE</li>
+                <li><a href="#">HOME</a> </li>
+                <li><a href="#">GAME</a></li>
+                <li><a href="#">E-SHOP</a></li>
+                <li><a href="#">MON COMPTE</a></li>
             </ul>
         </nav>
     </header>
@@ -149,20 +155,72 @@
                 <video src="assets\videos\Batman Begins - Bande Annonce Officielle (VF) - Christian Bale _ Christopher Nolan _ Liam Neeson.mkv" poster="assets/illustrations/Bathome_ba2.png" controls></video>
             </div>
         </section>
+
+        <form action="" method="get">
+            <h3>PRENONS CONTACT</h3>
+
+            <h4>ADRESSE EMAIL</h4>
+            <input type="email" name="addresse-mail" id="userMail" placeholder="Addresse email">
+    
+            <h4>NEWSLETTER</h4>
+            <p>
+                <label for="newsletter">En cochant cette case vous acceptez de recevoir l'actualité concernant les aventures de Batman:</label>
+                <input type="checkbox" name="newsletter" id="newsletter">
+            </p>
+    
+            <label for="frequence"><p>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</p></label>
+            <select name="frequence" id="frequence">
+                <option value="par semaine"></option>
+                <option value="par semaine">Une fois par semaine</option>
+                <option value="toutes les deux semaines">Une fois toutes les deux semaines</option>
+                <option value="par mois">Une fois par mois</option>
+                <option value="tous les trois mois">Une fois tous les trois mois</option>
+                <option value="tous les six mois">Une fois tous les six mois</option>
+            </select>
+    
+            <div>
+                <div><p>Souhaitez vous recevoir des news</p></div>
+                <input type="button" value="Des films">
+                <input type="button" value="Des comics">
+                <input type="button" value="De tout">
+            </div>
+    
+            <h4>MESSAGE</h4>
+            <input type="text" name="message" id="message" placeholder="Laissez un commentaire pour la communauté">
+            
+            <div>
+                <input type="submit" value="CONFIRMER">
+            </div>
+        </form>
+
+        <figure>
+            <blockquote>
+                <p>« La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles. »</p>  
+            </blockquote>
+            <figcaption>
+                <cite>The Dark Knight : Le Chevalier Noir</cite> <br>
+                - Le Joker à Batman (2008)
+            </figcaption>
+        </figure>
     </main>
 
     <footer>
-        <div>PRENONS CONTACT</div>
+        <p><img src="assets/logo/icon_WB.png" alt="Warner-Bros">Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</p>
 
-        <label for="userMail">ADRESSE EMAIL</label>
-        <input type="email" name="addresse-mail" id="userMail" placeholder="Addresse email">
+        <figure>
+            <img src="assets/logo/logo_sayna_white.png" alt="Sayna">
+            <img src="assets/logo/icon_x.png" alt="Logo X">
+            <img src="assets/logo/icon_DC.png" alt="Disney Comics">
+            <img src="assets/logo/icon_facebook.png" alt="facebook">
+            <img src="assets/logo/icon_ig.png" alt="instagram">
+            <img src="assets/logo/icon_tw.png" alt="twitter">
+        </figure>
+        
+        
 
-        <label for="newsletter">
-            <div>NEWSLETTER<div>
-                En cochant cette case vous acceptez de recevoir l'actualité concernant les aventures de Batman:
-        </label>
-        <input type="checkbox" name="newsletter" id="newsletter">
-        <input type="text">
+
+
+
 
     </footer>
     

@@ -13,13 +13,12 @@
 </head>
 <body>
     <header>
-        <div class="tete">
-            <img src="assets/logo/logohome.png" alt="Logo Batman" class="yellow logoFirst">
+        <div>
+            <a href="index.html"><img src="assets/logo/logohome.png" alt="Logo Batman Home" class="yellow logoFirst"></a>
         </div>
-        
-        <nav class="tete">
+        <nav>
             <ul>
-                <li><a href="#">HOME</a> </li>
+                <li><a href="index.html">HOME</a> </li>
                 <li><a href="#">GAME</a></li>
                 <li><a href="#">E-SHOP</a></li>
                 <li><a href="#">MON COMPTE</a></li>
@@ -28,18 +27,24 @@
     </header>
 
     <main>
-        <section>
-            <p>
-                Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternelle contre les criminels de Gotham City. Il est vengeur. Il est la nuit. 
-            </p>
-
-            <h3>Il est Batman.</h3>
+        <!--Section 1 Il est Batman-->
+        <section> 
             <div>
-                <input type="button" value="VOIR LE HÉROS">
-                <input type="button" value="LES ADVERSAIRES">
+                <p>
+                    Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternelle contre les criminels de Gotham City. Il est vengeur. Il est la nuit. 
+                </p>
+    
+                <h3>Il est Batman.</h3>
+                <div>
+                    <a href="" class="bouton">VOIR LE HÉROS</a>
+                    <a href="" class="bouton">LES ADVERSAIRES</a>
+                </div>
             </div>
+
+            <img src="assets/logo/flèche_down_header.png" alt="Grande flèche vers le bas">
         </section>
 
+        <!--Section 2: Batman au cinéma-->
         <section>
             <h2>BATMAN AU CINÉMA</h2>
 
@@ -65,6 +70,7 @@
             </div>
         </section>
 
+        <!--Section 3: Ennemies-->
         <section>
             <h2>NÉMÉSIS</h2>
             <p>
@@ -89,6 +95,7 @@
             </div>
         </section>
 
+        <!--Section 4: Alliés-->
         <section>
             <h2>ALLIÉS</h2>
             <p>
@@ -157,12 +164,12 @@
         </section>
 
         <form action="" method="get">
-            <h3>PRENONS CONTACT</h3>
+            <h4>PRENONS CONTACT</h4>
 
-            <h4>ADRESSE EMAIL</h4>
+            <h5>ADRESSE EMAIL</h5>
             <input type="email" name="addresse-mail" id="userMail" placeholder="Addresse email">
     
-            <h4>NEWSLETTER</h4>
+            <h5>NEWSLETTER</h5>
             <p>
                 <label for="newsletter">En cochant cette case vous acceptez de recevoir l'actualité concernant les aventures de Batman:</label>
                 <input type="checkbox" name="newsletter" id="newsletter">
@@ -180,12 +187,12 @@
     
             <div>
                 <div><p>Souhaitez vous recevoir des news</p></div>
-                <input type="button" value="Des films">
-                <input type="button" value="Des comics">
-                <input type="button" value="De tout">
+                <a href="" class="bouton">Des films</a>
+                <a href="" class="bouton">Des comics</a>
+                <a href="" class="bouton">De tout</a>
             </div>
     
-            <h4>MESSAGE</h4>
+            <h5>MESSAGE</h5>
             <input type="text" name="message" id="message" placeholder="Laissez un commentaire pour la communauté">
             
             <div>

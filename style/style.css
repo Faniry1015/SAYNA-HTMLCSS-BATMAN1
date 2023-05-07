@@ -9,8 +9,11 @@ hr {
     font-family: 'Rajdhani', sans-serif;
 }
 
-button {
-    font-family: 'Rajdhani', sans-serif;   
+.bouton {
+    font-family: 'Rajdhani', sans-serif;
+    color: white;   
+    text-decoration: none;
+    border: dotted 1px gold;
 }
 
 /*background*/
@@ -45,11 +48,6 @@ header {
     justify-content: space-between;
     display:flex;
     
-}
-
-/* juste pour voir*/
-.tete {
-    border: solid 1px black;
 }
 
 header ul {

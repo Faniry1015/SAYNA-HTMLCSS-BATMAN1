@@ -1,31 +1,48 @@
+/*verification div*/
+div, p {
+    border: dotted 1px blue;
+}
+
 /*Typographie*/
 html {
-    font-family: 'Space Grotesk', sans-serif;
     font-size: 18px;
     color: white;
+}
+
+p {
+    text-align: justify;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 hr {
     font-family: 'Rajdhani', sans-serif;
 }
 
-.bouton {
-    font-family: 'Rajdhani', sans-serif;
-    color: white;   
-    text-decoration: none;
-    border: dotted 1px gold;
+h2 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.mediaDescription {
+    font-size: 12px;
 }
 
 /*background*/
 html {
     background-image: url(../assets/illustrations/Bathome1.png);
-    width: 100%;
     background-repeat: no-repeat;
+    background-size: contain;
     background-color: black;
-    overflow-x: hidden;
 }
 
-/*border*/
+/*border et formatage général des contenus*/
+* {
+    box-sizing: border-box;
+}
 body {
     width: 85%;
     margin: 0 auto;
@@ -37,21 +54,88 @@ header {
     border-bottom: solid 2px #c4c4c450;
 }
 
-main, header {
-    padding: 50px 10%;
-    margin:auto;
+main {
+    padding: 0 10%;
+    margin:0 auto;
 }
+
+section {
+    margin: 15vw 0;
+}
+/*Bouton*/
+.Bout {
+    display: flex;
+    justify-content: center;
+}
+
+.bouton {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background: linear-gradient(to right,#EDDEBF40, #89000860);
+}
+
+.bouton:hover, .bouton:focus {
+    background: linear-gradient(to right,#EDDEBF, #890008);
+}
+
+.bouton a, button {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px;
+    color: white;   
+    text-decoration: none;
+}
+
+/*Images d'illustrations 03 à chaque fois*/
+.illPic {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.illPic figure {
+    width: 30%;
+    margin: 0;
+}
+
+.illPic img {
+    width: 100%;
+}
+
+.illPic figcaption {
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.illPic figure:hover {
+    transform: scale(1.1);
+}
+
 
 /*header*/
 header {
-    height: 100px;
-    justify-content: space-between;
+    height: 15vw;
+    min-height: 125px;
+    padding: 3vw 10px 0 10%;
     display:flex;
-    
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+nav {
+    border: solid 1px black;
+}
+
+nav a {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+nav ul li {
+    border: solid 1px black;  
 }
 
 header ul {
     display:flex;
+    flex-wrap: wrap;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -59,11 +143,114 @@ header ul {
 
 header ul li a {
     color: white;
+    text-decoration-line: none;
+}
+
+header ul li a:hover {
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+header ul li:nth-child(1) {             /*HOME*/
+    font-weight: bold;
+    text-decoration-line: underline;
 }
 
 header ul li {
-    padding: 5px;
+    padding: 5px 20px;
 }
 
+/*Section1*/
+.isBatman {
+    margin: 0 auto;
+    width: 60%;
+}
 
+.isBatman p, .isBatman h3 {
+    text-align: center;    
+}
 
+.sect1 {
+    display: flex;
+    align-items: center;
+}
+
+aside {
+    position: absolute;
+    right: 0;
+}
+
+aside figure div {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.arSec1Sec2 {
+    margin-bottom: 5vw;
+    text-align: center;
+}
+
+/*Section 2: Batman au cinéma*/
+
+/*Section 3 : Némésis*/
+.boomrang {
+    position: relative;
+    width: 100px;
+    top: 0;
+    right: 5%;
+}
+/* Section 4 Alliés*/
+
+.batSide {
+    position: absolute;
+    right: 0;
+}
+.batside h2 {
+    vertical-align: center;
+    justify-content: center;
+}
+
+.batSide h2 img{
+    position: absolute;
+    right: 0;
+    
+}
+
+/*Section 5 : Justice League*/
+
+.justLPic {
+    width: 100vw;
+}
+
+.justLPic img {
+    width: 100vw;
+}
+
+/*section 6 : multimédia*/
+.multi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.media {
+    width: 60%;
+    display: flex;
+    height: 100%;
+}
+
+.mediaDescription {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient()
+}
+
+.mediaDescription p, .mediaDescription div {
+    padding: 0.5vw;
+}
+
+.mediaDescription span {
+    color:#FFFF00;
+}

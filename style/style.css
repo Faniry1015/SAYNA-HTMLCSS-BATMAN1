@@ -1,5 +1,6 @@
 /*verification div*/
-div, p {
+div,
+p {
     border: dotted 1px blue;
 }
 
@@ -27,7 +28,7 @@ h4 {
     font-weight: bold;
 }
 
-.mediaDescription {
+.sec6__carrousContain__main__mediaDescription {
     font-size: 12px;
 }
 
@@ -43,6 +44,7 @@ html {
 * {
     box-sizing: border-box;
 }
+
 body {
     width: 85%;
     margin: 0 auto;
@@ -56,32 +58,35 @@ header {
 
 main {
     padding: 0 10%;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 section {
     margin: 15vw 0;
 }
+
 /*Bouton*/
-.Bout {
+.buttonContain {
     display: flex;
     justify-content: center;
 }
 
-.bouton {
+.buttonContain__buttons {
     padding: 10px 20px;
     margin: 0 10px;
-    background: linear-gradient(to right,#EDDEBF40, #89000860);
+    background: linear-gradient(to right, #EDDEBF40, #89000860);
 }
 
-.bouton:hover, .bouton:focus {
-    background: linear-gradient(to right,#EDDEBF, #890008);
+.buttonContain__buttons:hover,
+.buttonContain__buttons:focus {
+    background: linear-gradient(to right, #EDDEBF, #890008);
 }
 
-.bouton a, button {
+.buttonContain__buttons a,
+.buttonContain__buttons {
     font-family: 'Rajdhani', sans-serif;
     font-size: 16px;
-    color: white;   
+    color: white;
     text-decoration: none;
 }
 
@@ -116,7 +121,7 @@ header {
     height: 15vw;
     min-height: 125px;
     padding: 3vw 10px 0 10%;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
@@ -130,11 +135,11 @@ nav a {
 }
 
 nav ul li {
-    border: solid 1px black;  
+    border: solid 1px black;
 }
 
 header ul {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     list-style-type: none;
     margin: 0;
@@ -151,7 +156,8 @@ header ul li a:hover {
     text-decoration-line: underline;
 }
 
-header ul li:nth-child(1) {             /*HOME*/
+header ul li:nth-child(1) {
+    /*HOME*/
     font-weight: bold;
     text-decoration-line: underline;
 }
@@ -161,14 +167,21 @@ header ul li {
 }
 
 /*Section1*/
-.isBatman {
+.sect1__div {
     margin: 0 auto;
     width: 60%;
 }
 
-.isBatman p, .isBatman h3 {
-    text-align: center;    
+.sect1__div p,
+.sect1__div h3 {
+    text-align: center;
 }
+
+.sect1__div__isBatmanTxt {
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+}
+
 
 .sect1 {
     display: flex;
@@ -185,72 +198,79 @@ aside figure div {
     margin: 20px 0;
 }
 
-.arSec1Sec2 {
+
+/*Section 2: Batman au cinéma*/
+.sec2__firstBigArrow {
     margin-bottom: 5vw;
     text-align: center;
 }
 
-/*Section 2: Batman au cinéma*/
-
 /*Section 3 : Némésis*/
-.boomrang {
+.sec3__logo {
     position: relative;
     width: 100px;
     top: 0;
     right: 5%;
 }
+
 /* Section 4 Alliés*/
 
-.batSide {
+.sec4__sideBatImg {
     position: absolute;
     right: 0;
-}
-.batside h2 {
-    vertical-align: center;
-    justify-content: center;
 }
 
-.batSide h2 img{
+.sec4__sideBatImg h2 img {
     position: absolute;
     right: 0;
-    
+
 }
 
 /*Section 5 : Justice League*/
 
-.justLPic {
+.sec5__divImg {
     width: 100vw;
 }
 
-.justLPic img {
+.sec5__divImg img {
     width: 100vw;
 }
 
 /*section 6 : multimédia*/
-.multi {
+.sec6__carrousContain {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 2vw 0;
 }
 
-.media {
+.sec6__carrousContain__main{
     width: 60%;
     display: flex;
-    height: 100%;
 }
 
-.mediaDescription {
+.sec6__carrousContain__main__mediaDescription {
     width: 85%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient()
+    background: linear-gradient(135deg, #EDDEBF60, #19587D60);
+    border-radius: 0 10px 10px 0;
 }
 
-.mediaDescription p, .mediaDescription div {
+.sec6__carrousContain__main__mediaDescription p,
+.sec6__carrousContain__main__mediaDescription div {
     padding: 0.5vw;
 }
 
-.mediaDescription span {
-    color:#FFFF00;
+.sec6__carrousContain__main__mediaDescription span {
+    color: #FFFF00;
+}
+
+.sec6__videoDiv {
+    margin: 5vw 0 ;
+}
+
+.sec6__videoDiv__video {
+    max-width: 100%;
 }

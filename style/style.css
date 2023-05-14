@@ -1,31 +1,64 @@
 /*verification div*/
-div,
-p {
+/* div,
+p,
+nav, h2,h3 {
     border: dotted 1px blue;
+} */
+
+/* Import google fontRajdhani + Space grotesk */
+/* @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap'); */
+
+@font-face {
+    font-family: 'Rajdhani';
+    src: url(../police/Rajdhani/Rajdhani-Medium.ttf);
 }
 
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url(../police/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+/* Mise à zéro des marges par défauts et box-sizing*/
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Définition des couleurs */
+
+:root {
+    --myYellow: #FFFF00;
+    --myGrey50:#c4c4c450;
+}
 /*Typographie*/
 html {
+    font-family: 'Space Grotesk';
+    font-size: medium;
     font-size: 18px;
     color: white;
 }
 
 p {
     text-align: justify;
-    font-family: 'Space Grotesk', sans-serif;
 }
 
-hr {
-    font-family: 'Rajdhani', sans-serif;
+h2, h3, h4 {
+    font-family: 'Rajdhani';
+    font-size: medium;
 }
 
+h2 + p {
+    margin: 20px 0;
+}
+
+/* J'ai mis les titres de chaque section en h2 car pour le référencement, il est préféréble de n'avoir qu'un H1 dans une page */
 h2 {
-    font-size: 22px;
+    font-size: 36px;
 }
 
 h4 {
     font-size: 12px;
-    font-weight: bold;
 }
 
 .sec6__carrousContain__main__mediaDescription {
@@ -48,12 +81,12 @@ html {
 body {
     width: 85%;
     margin: 0 auto;
-    border-left: solid 2px #c4c4c450;
-    border-right: solid 2px #c4c4c450;
+    border-left: solid 2px var(--myGrey50);
+    border-right: solid 2px var(--myGrey50);
 }
 
 header {
-    border-bottom: solid 2px #c4c4c450;
+    border-bottom: solid 2px var(--myGrey50);
 }
 
 main {
@@ -65,27 +98,29 @@ section {
     margin: 15vw 0;
 }
 
-/*Bouton*/
-.buttonContain {
+/*btn*/
+.btnContain {
     display: flex;
     justify-content: center;
 }
 
-.buttonContain__buttons {
+.btnContain__btn {
     padding: 10px 20px;
     margin: 0 10px;
     background: linear-gradient(to right, #EDDEBF40, #89000860);
 }
 
-.buttonContain__buttons:hover,
-.buttonContain__buttons:focus {
+.btnContain__btn:hover,
+.btnContain__btn:focus {
     background: linear-gradient(to right, #EDDEBF, #890008);
 }
 
-.buttonContain__buttons a,
-.buttonContain__buttons {
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 16px;
+.btnContain__btn a,
+.btnContain__btn {
+    font-family: 'Rajdhani';
+    font-size: 20px;
+    font-size: medium;
+    font-weight: 400;
     color: white;
     text-decoration: none;
 }
@@ -116,27 +151,15 @@ section {
 }
 
 
-/*header*/
+/*header et navigation*/
 header {
-    height: 15vw;
-    min-height: 125px;
-    padding: 3vw 10px 0 10%;
+    height: 150px;
+    padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-nav {
-    border: solid 1px black;
-}
-
-nav a {
-    font-family: 'Rajdhani', sans-serif;
-}
-
-nav ul li {
-    border: solid 1px black;
-}
 
 header ul {
     display: flex;
@@ -149,15 +172,19 @@ header ul {
 header ul li a {
     color: white;
     text-decoration-line: none;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 header ul li a:hover {
     font-weight: bold;
+    color: var(--myYellow);
     text-decoration-line: underline;
 }
 
-header ul li:nth-child(1) {
-    /*HOME*/
+header ul li:nth-child(1) a {
+    /*HOME sur la page Home*/
     font-weight: bold;
     text-decoration-line: underline;
 }
@@ -172,6 +199,9 @@ header ul li {
     width: 60%;
 }
 
+.sect1__div__contentDiv {
+    margin: 20px 0;
+}
 .sect1__div p,
 .sect1__div h3 {
     text-align: center;
@@ -180,6 +210,7 @@ header ul li {
 .sect1__div__isBatmanTxt {
     text-align: center;
     font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
 }
 
 
@@ -259,8 +290,9 @@ aside figure div {
 }
 
 .sec6__carrousContain__main__mediaDescription p,
-.sec6__carrousContain__main__mediaDescription div {
-    padding: 0.5vw;
+.sec6__carrousContain__main__mediaDescription div,
+.sec6__carrousContain__main__mediaDescription h3 {
+    padding: 5px;
 }
 
 .sec6__carrousContain__main__mediaDescription span {
@@ -268,9 +300,87 @@ aside figure div {
 }
 
 .sec6__videoDiv {
-    margin: 5vw 0 ;
+    margin: 5px 0 ;
 }
 
 .sec6__videoDiv__video {
     max-width: 100%;
+}
+
+/* Section 7: Formulaire */
+.sec7 {
+    background: linear-gradient(135deg, #EDDEBF60, #19587D60);
+    padding: 20px 20%;
+}
+
+.sec7__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sec7__form__div {
+    margin: 10px 0;
+}
+
+
+.sec7__form__div__h4 {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.sec7__form__div__input, 
+.sec7__form__div__checkbox, 
+.sec7__form__div__fieldset__legend,
+.sec7__form__div__textarea,
+.sec7__form__div__frequence,
+.sec7__form__div__selectContainer__select{
+    color: rgba(255, 255, 255, 0.5);
+    background:none;
+    border: none;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    font-family: 'Space Grotesk';
+    font-size: medium;
+    margin: 10px 0;
+    width: 100%
+}   
+
+.sec7__form__div__checkbox {
+    border-bottom: none;
+    margin: 10px 0;
+}
+
+.sec7__form__div textarea::placeholder {
+    font-size: 12px;
+    font-family: 'Space Grotesk';
+    font-size: medium;
+}
+
+fieldset {
+    border: none;
+}
+
+.sec7__form__div__fieldset__radioContain {
+    text-align: center;
+}
+
+.sec7__form__div__fieldset__radioContain__choice {
+    display: none;
+}
+
+.sec7__form__div__fieldset__radioContain__choice + label {
+    padding: 2px 5px;
+    margin: 0 5px;
+    font-size: 12px;
+    font-family: Rajdhani;
+    font-size: medium;
+    border: solid 2px rgba(255, 255, 255, 0.5);
+}
+
+.sec7__form__div__fieldset__radioContain__choice:checked +label {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.sec7__form__submit {
+    text-align: center;
 }

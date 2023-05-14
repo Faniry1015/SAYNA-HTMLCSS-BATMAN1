@@ -6,11 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <title>Batman | Home</title>
 </head>
@@ -19,8 +14,7 @@
     <!-- ENTETE -->
     <header class="header">
         <div>
-            <a href="index.html"><img src="assets/logo/logohome.png" alt="Logo Batman Home"
-                    class="header__logo"></a>
+            <a href="index.html"><img src="assets/logo/logohome.png" alt="Logo Batman Home" class="header__logo"></a>
         </div>
         <nav>
             <ul>
@@ -38,19 +32,24 @@
         <section>
             <div class="sect1">
                 <div class="sect1__div">
-                    <p>
-                        Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternelle contre les criminels de
-                        Gotham City. <br>
-                        Il est vengeur. Il est la nuit.
-                    </p>
+                    <div class="sect1__div__contentDiv">
+                        <p>
+                            Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternelle contre les criminels
+                            de
+                            Gotham City. <br>
+                            Il est vengeur. Il est la nuit.
+                        </p>
+                    </div>
 
-                    <div class="sect1__div__isBatmanTxt"><strong>Il est Batman.</strong></div>
+                    <div class="sect1__div__contentDiv sect1__div__isBatmanTxt">
+                        Il est Batman.
+                    </div>
 
-                    <div class="buttonContain">
-                        <div class="buttonContain__buttons">
+                    <div class="sect1__div__contentDiv btnContain">
+                        <div class="btnContain__btn">
                             <a href="">VOIR LE HÉROS</a>
                         </div>
-                        <div class="buttonContain__buttons">
+                        <div class="btnContain__btn">
                             <a href="">LES ADVERSAIRES</a>
                         </div>
                     </div>
@@ -60,19 +59,21 @@
                 <aside>
                     <figure>
                         <div>
-                            <img src="assets/logo/logo_bat_flèche.png" alt="Batman tête en bas">
+                            <a href="#"><img src="assets/logo/logo_bat_flèche.png" alt="Batman tête en bas"></a>
                         </div>
                         <div>
-                            <img src="assets/logo/icon_facebook.png" alt="facebook">
+                            <a href="#"><img src="assets/logo/icon_facebook.png" alt="facebook"></a>
                         </div>
                         <div>
-                            <img src="assets/logo/icon_ig.png" alt="instagram">
+                            <a href="#"><img src="assets/logo/icon_ig.png" alt="instagram">
+                            </a>
                         </div>
                         <div>
-                            <img src="assets/logo/icon_tw.png" alt="twitter">
+                            <a href="#"><img src="assets/logo/icon_tw.png" alt="twitter">
+                            </a>
                         </div>
                         <div>
-                            <img src="assets/logo/logo_bat_flèche_2.png" alt="Batman tête en haut">
+                            <a href="#"><img src="assets/logo/logo_bat_flèche_2.png" alt="Batman tête en haut"></a>
                         </div>
                     </figure>
                 </aside>
@@ -203,7 +204,7 @@
 
                     <div class="sec6__carrousContain__main__mediaDescription">
                         <div>ACTION, Adventure</div>
-                        <div>Batman Begins</div>
+                        <h3>Batman Begins</h3>
                         <div>IMDB : <span>8.2</span></div>
                         <p>
                             Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément traumatisé,
@@ -229,56 +230,65 @@
 
         <!--Section 7: Formulaire-->
         <section class="sec7">
-            <h4>PRENONS CONTACT</h4>
-            <form action="" method="get">
-                <div>
-                    <h5>ADRESSE EMAIL</h5>
-                    <input type="email" name="addresse-mail" id="userMail" placeholder="Addresse email">
+            <h2 class="sec7__title">PRENONS CONTACT</h2>
+            <form class="sec7__form" action="" method="get">
+                <div class="sec7__form__div">
+                    <h4 class="sec7__form__div__h4">ADRESSE EMAIL</h4>
+                    <input class="sec7__form__div__input" type="email" name="addresse-mail" id="userMail"
+                        placeholder="Addresse email">
                 </div>
 
-                <div>
-                    <h5>NEWSLETTER</h5>
-                    <p>
+                <div class="sec7__form__div">
+                    <h4 class="sec7__form__div__h4">NEWSLETTER</h4>
+                    <div class="sec7__form__div__checkbox">
                         <label for="newsletter">En cochant cette case vous acceptez de recevoir l'actualité concernant
                             les aventures de Batman:</label>
                         <input type="checkbox" name="newsletter" id="newsletter">
-                    </p>
+                    </div>
 
-                    <label for="frequence">
-                        <p>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</p>
-                    </label>
-                    <select name="frequence" id="frequence">
-                        <option value="par semaine"></option>
-                        <option value="par semaine">Une fois par semaine</option>
-                        <option value="toutes les deux semaines">Une fois toutes les deux semaines</option>
-                        <option value="par mois">Une fois par mois</option>
-                        <option value="tous les trois mois">Une fois tous les trois mois</option>
-                        <option value="tous les six mois">Une fois tous les six mois</option>
-                    </select>
-
-                    <div>
-                        <div>
-                            <p>Souhaitez vous recevoir des news</p>
+                    <div class="sec7__form__div__frequence">
+                        <label for="frequence">Choisissez la fréquence à laquelle vous souhaitez recevoir votre
+                            newsletter
+                        </label>
+                        <div class="sec7__form__div__selectContainer">
+                            <select class="sec7__form__div__selectContainer__select" name="frequence" id="frequence">
+                                <option class="sec7__form__div__selectContainer__select__option"value="par semaine"></option>
+                                <option class="sec7__form__div__selectContainer__select__option" value="par semaine">Une fois par semaine</option>
+                                <option class="sec7__form__div__selectContainer__select__option" value="toutes les deux semaines">Une fois toutes les deux semaines</option>
+                                <option class="sec7__form__div__selectContainer__select__option" value="par mois">Une fois par mois</option>
+                                <option class="sec7__form__div__selectContainer__select__option" value="tous les trois mois">Une fois tous les trois mois</option>
+                                <option class="sec7__form__div__selectContainer__select__option" value="tous les six mois">Une fois tous les six mois</option>
+                            </select>
                         </div>
-                        <a href="" class="formBouton">Des films</a>
-                        <a href="" class="formBouton">Des comics</a>
-                        <a href="" class="formBouton">De tout</a>
+                    </div>
+
+                    <div class="sec7__form__div">
+                        <fieldset class="sec7__form__div__fieldset">
+                            <legend class="sec7__form__div__fieldset__legend">
+                                Souhaitez vous recevoir des news
+                            </legend>
+                            <div class="sec7__form__div__fieldset__radioContain">
+                                <input class="sec7__form__div__fieldset__radioContain__choice" type="radio" name="natureSend" id="films"><label for="films">Des films</label>
+                                <input class="sec7__form__div__fieldset__radioContain__choice" type="radio" name="natureSend" id="comics"><label for="comics">Des comics</label>
+                                <input class="sec7__form__div__fieldset__radioContain__choice" type="radio" name="natureSend" id="tout"><label for="tout">De tout</label>
+                            </div>
+                        </fieldset>
                     </div>
                 </div>
 
-                <div>
-                    <h5>MESSAGE</h5>
-                    <textarea name="message" id="message" cols="30" rows="10"
+                <div class="sec7__form__div">
+                    <h4 class="sec7__form__div__h4">MESSAGE</h4>
+                    <textarea class="sec7__form__div__textarea" name="message" id="message" cols="30" rows="1"
                         placeholder="Laissez un commentaire pour la communauté"></textarea>
                 </div>
 
-                <div>
-                    <button type="submit" class="buttonContain__buttons">CONFIRMER</button>
+                <div class="sec7__form__submit">
+                    <button type="submit" class="btnContain__btn">CONFIRMER</button>
                 </div>
             </form>
         </section>
 
-        <!-- Section 7: Citations -->
+        <!-- Section 8: Citations -->
         <section>
             <figure>
                 <blockquote>

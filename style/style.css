@@ -83,11 +83,13 @@ html {
     box-sizing: border-box;
 }
 
-body {
-    min-width: 400px;
-    margin: 0 7.5%;
-    border-left: solid 2px var(--myGreyBorder);
-    border-right: solid 2px var(--myGreyBorder);
+@media screen and (min-width: 500px) {
+    body {
+        min-width: 400px;
+        margin: 0 7.5%;
+        border-left: solid 2px var(--myGreyBorder);
+        border-right: solid 2px var(--myGreyBorder);
+    }
 }
 
 header {
@@ -95,8 +97,14 @@ header {
 }
 
 main {
-    padding: 0 10%;
+    padding: 0 5%;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 500px) {
+    main {
+        padding: 0 10%;
+    }
 }
 
 section {
@@ -166,7 +174,7 @@ section {
     padding: 4%;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 
 
@@ -203,15 +211,34 @@ section {
 }
 
 /* Icônes latéraux de réseaux sociaux */
-aside {
-    position: fixed;
-    right: 52px;
-    top: 200px;
+
+aside figure {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
-aside figure div {
-    text-align: center;
-    margin: 15px 0;
+
+aside img:hover, header img:hover {
+    filter : invert(50%);
+}
+
+@media screen and (min-width: 800px) {
+    aside figure {
+        display: initial;
+    }
+    aside {
+        position: fixed;
+        right: calc(7.5% - 52px);
+        top: 200px;
+    }
+    
+    aside figure div {
+        text-align: center;
+        margin: 15px 0;
+    }
 }
 
 
@@ -265,7 +292,8 @@ aside figure div {
 }
 
 .sec4__TitleSideImgContain__divImg img {
-    height: 100%
+    height: 100%;
+    opacity: 75%;
 }
 
 .sec4 p {
@@ -293,20 +321,23 @@ aside figure div {
 .sec6__carrousContain {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin: 20px 0;
 }
 
 .sec6__carrousContain button{
-    background-color: rgba(255, 255, 255, 0);
+    background: none;
     border: none;
+    border: none;
+}
+
+.sec6__carrousContain button:hover {
+    filter: brightness(200%);
 }
 
 .sec6__carrousContain__main {
     width: 60%;
     min-width: 300px;
     display: flex;
-    align-items: stretch;
 }
 
 .sec6__carrousContain__main__imgContainer {
@@ -322,6 +353,11 @@ aside figure div {
     background: linear-gradient(135deg, #EDDEBF60, #19587D60);
     border-radius: 0 10px 10px 0;
     padding: 5px;
+}
+
+.sec6__carrousContain__main__mediaDescription a {
+    color: white;
+    text-decoration: none;
 }
 
 .sec6__carrousContain__main__mediaDescription__component {

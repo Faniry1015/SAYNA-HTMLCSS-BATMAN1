@@ -246,6 +246,10 @@ section {
 }
 
 /* ASIDE:Icônes latéraux de réseaux sociaux */
+aside {
+    position: sticky;
+    top: 5px;
+}
 
 aside figure {
     display: flex;
@@ -255,14 +259,12 @@ aside figure {
     align-items: center;
 }
 
-
-/* Appliquer la couleur jaune en utilisant css filter generator from white to target hex color (codepen.io) => réduire invert à proche de zéro */
-aside img:hover, header img:hover {
-    filter: invert(4%) sepia(99%) saturate(5553%) hue-rotate(358deg) brightness(109%) contrast(102%);
-    -webkit-filter: invert(4%) sepia(99%) saturate(5553%) hue-rotate(358deg) brightness(109%) contrast(102%);
+aside img {
+    max-width: 75px;
 }
 
-@media screen and (min-width: 800px) {
+
+@media screen and (min-width: 500px) {
     aside figure {
         display: initial;
     }
@@ -276,8 +278,17 @@ aside img:hover, header img:hover {
         text-align: center;
         margin: 5px 0;
     }
+
+    aside img {
+        max-width: none;
+    }
 }
 
+/* Appliquer la couleur jaune en utilisant css filter generator from white to target hex color (codepen.io) => réduire invert à proche de zéro */
+aside img:hover, header img:hover {
+    filter: invert(4%) sepia(99%) saturate(5553%) hue-rotate(358deg) brightness(109%) contrast(102%);
+    -webkit-filter: invert(4%) sepia(99%) saturate(5553%) hue-rotate(358deg) brightness(109%) contrast(102%);
+}
 
 /*SECTION 1*/
 .sect1 {

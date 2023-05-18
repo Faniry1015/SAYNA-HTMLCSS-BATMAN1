@@ -29,6 +29,39 @@ h3 {
     box-sizing: border-box;
 }
 
+/* Effet fadeIn sur tous les éléments */
+h2, h3, h4, figure, img, li, p, .btnContain__btn  {
+    animation: fadeIn 5s normal;
+    -webkit-animation: fadeIn 5s normal;
+    -o-animation: fadeIn 5s normal;
+
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
 /* Définition des couleurs de base */
 
 :root {
@@ -36,6 +69,7 @@ h3 {
     --myGrey50: #c4c4c450;
     --myGreyfull: #c4c4c4;
     --myGreyBorder: #bcbbbd44;
+    --myMarineBleu: #19587D;
 }
 
 /*Typographie*/
@@ -129,6 +163,7 @@ section {
 .btnContain__btn:hover,
 .btnContain__btn:focus {
     background: linear-gradient(80deg, #EDDEBF, #890008);
+    cursor:pointer;
 }
 
 .btnContain__btn a,
@@ -210,7 +245,7 @@ section {
     margin: 5px 15px;
 }
 
-/* Icônes latéraux de réseaux sociaux */
+/* ASIDE:Icônes latéraux de réseaux sociaux */
 
 aside figure {
     display: flex;
@@ -221,8 +256,10 @@ aside figure {
 }
 
 
+/* Appliquer la couleur jaune en utilisant css filter generator from white to target hex color (codepen.io) => réduire invert à proche de zéro */
 aside img:hover, header img:hover {
-    filter : invert(50%);
+    filter: invert(4%) sepia(99%) saturate(5553%) hue-rotate(358deg) brightness(109%) contrast(102%);
+    -webkit-filter: invert(4%) sepia(99%) saturate(5553%) hue-rotate(358deg) brightness(109%) contrast(102%);
 }
 
 @media screen and (min-width: 800px) {
@@ -237,14 +274,14 @@ aside img:hover, header img:hover {
     
     aside figure div {
         text-align: center;
-        margin: 15px 0;
+        margin: 5px 0;
     }
 }
 
 
 /*SECTION 1*/
 .sect1 {
-    margin: 250px auto;
+    margin: 200px auto;
     width: 60%;
     min-width: 350px;
 }
@@ -447,18 +484,20 @@ fieldset {
     display: none;
 }
 
-.sec7__form__div__fieldset__radioContain__choice+ label {
+.sec7__form__div__fieldset__radioContain__choice + label {
     width: 70px;
     padding: 5px 0;
-    margin: 5px;
+    margin: 5px; 
     font-size: 12px;
     font-family: Rajdhani;
     text-align: center;
-    border: solid 1px rgba(255, 255, 255, 0.5);
+    border-image: linear-gradient(60deg,var(--myGrey50), var(--myMarineBleu)) 1 / 1.5px;
+    -o-border-image: linear-gradient(60deg,var(--myGrey50), var(--myMarineBleu)) 1 / 1.5px;
 }
 
 .sec7__form__div__fieldset__radioContain__choice+ label:hover {
     background-color: rgba(255, 255, 255, 0.5);
+    cursor:pointer;
 }
 
 .sec7__form__div__fieldset__radioContain__choice:checked + label {

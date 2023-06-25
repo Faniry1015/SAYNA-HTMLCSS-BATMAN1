@@ -157,7 +157,6 @@ section {
     padding: 10px;
     margin: 0 10px;
     background: linear-gradient(80deg, #EDDEBF40, #89000860);
-    box-shadow: black 3px 3px 60px;
 }
 
 .btnContain__btn:hover,
